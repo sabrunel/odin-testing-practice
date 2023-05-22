@@ -19,17 +19,23 @@ it("Returns the input string when a capitalized string is supplied", () => {
 it("Throws an error if the input is an empty string", () => {
     expect(() => {
         capitalize("")
-    }).toThrow();
+    }).toThrow("Input must be a string");
+})
+
+it("Throws an error if the input is not a string", () => {
+    expect(() => {
+        capitalize(123)
+    }).toThrow("Input must be a string");
 })
 
 it("Throws an error if the input string starts with a special character", () => {
     expect(() => {
         capitalize("!Banana")
-    }).toThrow();
+    }).toThrow("Input string must start with a letter");
 })
 
 it("Throws an error if the input string starts with a number", () => {
     expect(() => {
         capitalize("1Banana")
-    }).toThrow();
+    }).toThrow("Input string must start with a letter");
 })
