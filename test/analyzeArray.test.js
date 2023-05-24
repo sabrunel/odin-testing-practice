@@ -1,4 +1,4 @@
-const analyzeArray = require("./analyzeArray");
+const analyzeArray = require("../src/analyzeArray");
 
 it("Returns an object with the min, max, average values of the input array and its length", () => {
     expect(analyzeArray([1,8,3,4,2,6])).toEqual({

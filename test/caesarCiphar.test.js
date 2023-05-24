@@ -1,4 +1,4 @@
-const caesarCipher = require('./caesarCipher');
+const caesarCipher = require('../src/caesarCipher');
 
 it("Replaces all letters in the input string with the next letter in the alphabet ", () => {
     expect(caesarCipher("BANANA", 1)).toBe("CBOBOB");

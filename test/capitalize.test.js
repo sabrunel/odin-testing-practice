@@ -1,4 +1,4 @@
-const capitalize = require("./capitalize");
+const capitalize = require("../src/capitalize");
 
 it("Returns a capitalized string when a lowercase string is supplied", () => {
     expect(capitalize("banana")).toBe("Banana");
